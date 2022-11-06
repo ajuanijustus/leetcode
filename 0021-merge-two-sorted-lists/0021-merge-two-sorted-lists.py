@@ -7,8 +7,6 @@ class Solution:
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
         tail = head = ListNode()
         while list1 and list2:
-            print("head", head.next)
-            print("tail", tail)
             if list1.val <= list2.val:
                 tail.next = list1
                 list1 = list1.next
