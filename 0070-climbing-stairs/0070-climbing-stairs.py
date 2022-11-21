@@ -9,8 +9,6 @@ class Solution:
             b = 2
             for i in range(n-2):
                 a, b = b, a+b
-                print(a)
-                print(b)
             return b
         else:
             return 0
