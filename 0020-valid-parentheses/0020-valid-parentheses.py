@@ -11,4 +11,4 @@ class Solution:
                 else:
                     return False
         
-        return True if len(stack)==0 else False
+        return False if stack else True
