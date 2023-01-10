@@ -6,7 +6,7 @@ class Solution:
             start = i
             while(stack and stack[-1][1] > h):
                 ar_max = max(ar_max,
-                             (h*(i-stack[-1][0]+1)),
+                             # (h*(i-stack[-1][0]+1)),
                              stack[-1][1]*(i-stack[-1][0]))
                 start = stack.pop()[0]
             stack.append((start, h))
