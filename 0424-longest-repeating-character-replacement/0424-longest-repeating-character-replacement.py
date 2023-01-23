@@ -5,7 +5,7 @@ class Solution:
         l = 0
         for r in range(len(s)):
             c[s[r]] = 1 + c.get(s[r], 0)
-            while(r-l+1-max(c.values()) > k):
+            while(r-l+1-max(c.values())>k):
                 c[s[l]] -= 1
                 l += 1
             mx = max(mx, r-l+1)
