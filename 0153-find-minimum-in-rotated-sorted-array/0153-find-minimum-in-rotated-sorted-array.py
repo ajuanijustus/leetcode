@@ -4,7 +4,6 @@ class Solution:
         l, r = 1, len(nums)-1
         while(l<=r):
             i = l + ((r-l)//2)
-            print(l, r, i, nums[i])
             if nums[i] > m:
                 l = i + 1
             else:
